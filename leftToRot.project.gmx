@@ -157,11 +157,16 @@
       <sprite>sprites\s_liveAshBeeGrub</sprite>
       <sprite>sprites\s_rawAshBeeGrub</sprite>
       <sprite>sprites\s_cookedAshBeeGrub</sprite>
+      <sprite>sprites\s_queenBeeAntennae</sprite>
       <sprite>sprites\s_queenBeeHead</sprite>
       <sprite>sprites\s_queenBeeAntenna</sprite>
       <sprite>sprites\s_queenBeeHalo</sprite>
       <sprite>sprites\s_queenBeeThorax</sprite>
       <sprite>sprites\s_queenBeeWing</sprite>
+      <sprite>sprites\s_queenBeeArmContracted</sprite>
+      <sprite>sprites\s_queenBeeArmExtended</sprite>
+      <sprite>sprites\s_queenBeeLeg</sprite>
+      <sprite>sprites\s_queenBeeThrone</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
