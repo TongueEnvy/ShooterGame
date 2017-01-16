@@ -59,12 +59,12 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprites name="bag">
+    <sprites name="Bag">
       <sprite>sprites\s_selectSlot</sprite>
       <sprite>sprites\s_equipSlot</sprite>
       <sprite>sprites\s_itemSlot</sprite>
     </sprites>
-    <sprites name="player">
+    <sprites name="Player">
       <sprite>sprites\s_playerMeterForeground</sprite>
       <sprite>sprites\s_playerHealth</sprite>
       <sprite>sprites\s_playerHunger</sprite>
@@ -81,11 +81,21 @@
       <sprite>sprites\s_blankInventorySlot</sprite>
       <sprite>sprites\s_hudBG</sprite>
     </sprites>
-    <sprite>sprites\s_humanCollision</sprite>
-    <sprite>sprites\s_solid</sprite>
-    <sprite>sprites\s_npcHealthBackground</sprite>
-    <sprite>sprites\s_npcHealthBar</sprite>
-    <sprite>sprites\s_npcHealth</sprite>
+    <sprites name="Other">
+      <sprite>sprites\s_humanCollision</sprite>
+      <sprite>sprites\s_solid</sprite>
+      <sprite>sprites\s_npcHealthBackground</sprite>
+      <sprite>sprites\s_npcHealth</sprite>
+      <sprite>sprites\s_npcHealthBar</sprite>
+    </sprites>
+    <sprites name="Flora">
+      <sprite>sprites\s_deadShrub</sprite>
+      <sprite>sprites\s_deadTree001</sprite>
+      <sprite>sprites\s_shrub</sprite>
+    </sprites>
+    <sprites name="Items">
+      <sprite>sprites\s_woodIcon</sprite>
+    </sprites>
     <sprites name="Weapons">
       <sprites name="beowulf">
         <sprite>sprites\s_beowulfRifle</sprite>
@@ -110,12 +120,17 @@
       </sprites>
       <sprites name="flayer">
         <sprite>sprites\s_flayerGlaive</sprite>
+        <sprite>sprites\s_flayerIcon</sprite>
         <sprite>sprites\s_flayerHeld</sprite>
       </sprites>
     </sprites>
-    <sprites name="shops">
+    <sprites name="Shops">
       <sprite>sprites\s_errTheFlightless</sprite>
       <sprite>sprites\s_rottenTooth</sprite>
+      <sprite>sprites\s_firePit</sprite>
+      <sprite>sprites\s_firePitLit</sprite>
+      <sprite>sprites\s_firePitLitFirstDraft</sprite>
+      <sprite>sprites\s_firePitDev</sprite>
       <sprite>sprites\s_cleanTooth</sprite>
       <sprite>sprites\s_metalTooth</sprite>
       <sprite>sprites\s_goldTooth</sprite>
@@ -130,7 +145,7 @@
       <sprite>sprites\s_woodenChest</sprite>
       <sprite>sprites\s_ironChest</sprite>
     </sprites>
-    <sprites name="bees">
+    <sprites name="Bees">
       <sprite>sprites\s_ashBeeHive</sprite>
       <sprite>sprites\s_ashBeeWorker</sprite>
       <sprite>sprites\s_ashBeeWarrior</sprite>
@@ -142,25 +157,18 @@
       <sprite>sprites\s_liveAshBeeGrub</sprite>
       <sprite>sprites\s_rawAshBeeGrub</sprite>
       <sprite>sprites\s_cookedAshBeeGrub</sprite>
-      <sprite>sprites\s_queenBeeHalo</sprite>
-      <sprite>sprites\s_queenBeeAntennae</sprite>
       <sprite>sprites\s_queenBeeHead</sprite>
+      <sprite>sprites\s_queenBeeAntenna</sprite>
+      <sprite>sprites\s_queenBeeHalo</sprite>
       <sprite>sprites\s_queenBeeThorax</sprite>
       <sprite>sprites\s_queenBeeWing</sprite>
-      <sprite>sprites\s_queenBeeArmContracted</sprite>
-      <sprite>sprites\s_queenBeeArmExtended</sprite>
-      <sprite>sprites\s_queenBeeLeg</sprite>
-      <sprite>sprites\s_queenBeeThrone</sprite>
-    </sprites>
-    <sprites name="flora">
-      <sprite>sprites\s_deadTree001</sprite>
-      <sprite>sprites\s_deadShrub</sprite>
-      <sprite>sprites\s_shrub</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
+    <script>scripts\scr_text.gml</script>
+    <script>scripts\scr_dropWood.gml</script>
     <script>scripts\scr_dropTeeth.gml</script>
     <script>scripts\scr_drawBag.gml</script>
     <script>scripts\scr_npcDraw.gml</script>
@@ -179,6 +187,7 @@
     <font>fonts\fnt_newRocker</font>
   </fonts>
   <objects name="objects">
+    <object>objects\o_text</object>
     <object>objects\o_cursor</object>
     <object>objects\o_player</object>
     <object>objects\o_genericPlayerShot</object>
@@ -193,6 +202,7 @@
     <object>objects\o_genericEnemyShot</object>
     <object>objects\o_smallWoodenCrate</object>
     <object>objects\o_genericMoney</object>
+    <object>objects\o_genericWood</object>
     <object>objects\o_deadTree001</object>
     <object>objects\o_ashBeeWorker</object>
     <object>objects\o_ashBeeWarrior</object>

@@ -27,7 +27,9 @@ item.cost = 5
 
 bag = instance_create(0, 0, o_bag);
 bag.player = o_player;
-//bag.bagOpen = 0;</code>
+//bag.bagOpen = 0;
+
+//scr_text("This is a test string", 0.5, 300, 300);</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
