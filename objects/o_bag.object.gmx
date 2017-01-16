@@ -151,19 +151,23 @@ else {
 
 //These if statements control which weapon icon appears in the equipSlot.
 if(o_player.weapon == 1) {
-    draw_sprite(s_hummingBirdIcon, 0, view_xview + 968, view_yview + 584);
+    draw_sprite(s_flayerIcon, 0, view_xview + 960, view_yview + 576);
 }
 
-else if (o_player.weapon == 2) {
+else if(o_player.weapon == 2) {
     draw_sprite(s_beowulfIcon, 0, view_xview + 960, view_yview + 576);
 }
 
-else if (o_player.weapon == 3) {
+else if(o_player.weapon == 3) {
     draw_sprite(s_clipperIcon, 0, view_xview + 960, view_yview + 576);
 }
 
-else if (o_player.weapon == 4) {
-    draw_sprite(s_vindicatorBladeCannon, 0, view_xview + 960, view_yview + 576);
+else if(o_player.weapon == 4) {
+    draw_sprite(s_vindicatorIcon, 0, view_xview + 960, view_yview + 576);
+}
+
+else if(o_player.weapon == 5) {
+    draw_sprite(s_woodIcon, 0, view_xview + 960, view_yview + 576);
 }
 
 //This draws the bag if it is open.
@@ -188,7 +192,7 @@ if(bagOpen == 1) {
             //0, it should draw one of the weapons.
             //Limited to only the items in this check.                                                
             if(inventory[# xCoord, yCoord] == 1) {
-                draw_sprite(s_hummingBirdIcon, 0, view_xview + 872 + (32 * xCoord), view_yview + 456 + (32 * yCoord));
+                draw_sprite(s_flayerIcon, 0, view_xview + 864 + (32 * xCoord), view_yview + 448 + (32 * yCoord));
             }
 
             else if (inventory[# xCoord, yCoord] == 2) {
@@ -201,6 +205,10 @@ if(bagOpen == 1) {
 
             else if (inventory[# xCoord, yCoord] == 4) {
                 draw_sprite(s_vindicatorIcon, 0, view_xview + 864 + (32 * xCoord), view_yview + 448 + (32 * yCoord));
+            }
+            
+            else if (inventory[# xCoord, yCoord] == 5) {
+                draw_sprite(s_woodIcon, 0, view_xview + 864 + (32 * xCoord), view_yview + 448 + (32 * yCoord));
             }
         }
     }
