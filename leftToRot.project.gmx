@@ -82,6 +82,7 @@
       <sprite>sprites\s_hudBG</sprite>
     </sprites>
     <sprites name="Other">
+      <sprite>sprites\s_titleAsh</sprite>
       <sprite>sprites\s_humanCollision</sprite>
       <sprite>sprites\s_solid</sprite>
       <sprite>sprites\s_npcHealthBackground</sprite>
@@ -169,7 +170,9 @@
       <sprite>sprites\s_queenBeeThrone</sprite>
     </sprites>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bg_title</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_text.gml</script>
@@ -217,8 +220,10 @@
     <object>objects\o_errTheFlightless</object>
     <object>objects\o_flayer</object>
     <object>objects\o_genericFood</object>
+    <object>objects\o_titleCursor</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_title</room>
     <room>rooms\testRoom</room>
   </rooms>
   <help>
