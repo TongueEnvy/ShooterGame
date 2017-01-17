@@ -101,7 +101,8 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto_next()
+            <string>part_system_destroy(ps_ashes)
+room_goto_next()
 </string>
           </argument>
         </arguments>
